@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Trabajando con Tablas</Table></title> 
+        <!--Datos de cabecera que no aparecerán en la página web, pero que son 
+        importantes para catalogarla-->
+    </head>
+    <body>
+        <h1>Horario de clase</h1>
+        <hr>
+        <table border="1"> <!--propiedad border para las lineas de la tabla-->
+            <!--Primero filas, representadas por tr -->
+            <!--La primera fila, al ser un titulo, por th cada columna-->
+            <!-- las columnas son td-->
+            <tr>
+              <th>LUNES</th>  
+              <th>MARTES</th> 
+              <th>MIÉRCOLES</th> 
+              
+            </tr>
+            <tr>
+                <td rowspan="2">LM</td> <!--LUNES-->
+                <td rowspan="2">BBDD</td> <!--MARTES-->
+                <td>FOL</td> <!--MIERCOLES-->
+            </tr>
+            <tr>
+                 <!--LM LUNES-->
+                 <!-- BBDD MARTES-->
+                <td>Entornos</td> <!--MIERCOLES-->
+            </tr>
+            <tr>
+                <td>FOL</td>
+                <td>LM</td>
+                <td>Sistemas</td>
+            </tr>
+            <tr>
+                <td>PROG</td>
+                <td>Entornos</td>
+                <td>FOL</td>
+            </tr>
+            <tr>
+                <td>Inglés</td>
+                <td colspan="2">LM</td> <!--Martes y miercoles-->
+                
+            </tr>
+
+           <!--OTRA TABLA--> 
+        <table border="2">
+            <tr>
+                <th>Lunes</th>
+                <th>MARTES</th>
+                <th>MIÉRCOLES</th>
+            </tr>
+
+            <tr>
+                <td>LM</td>
+                <td>PR</td>
+                <td>ED</td>
+            </tr>
+            <tr>
+                <td colspan="2">RECREO</td> <!--LUNES Y MARTES-->
+                <td rowspan="2">SI</td> <!--MIERCOLES 2 horas-->
+
+            </tr>
+            <tr>
+                <td>FOL</td> <!--LUNES-->
+                <td>TUTORIA</td> <!--MARTES-->
+            </tr>
+    
+
+
+        </table>
+        
+      
+    </body>
+</html>
