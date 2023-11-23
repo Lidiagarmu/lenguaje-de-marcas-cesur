@@ -1,0 +1,18 @@
+/*En esta hoja de estilos externa no deben aparecer etiquetas html>*/
+
+body {
+    color: pink;
+    background-color: #cccccc ;
+    text-indent: 3cm;
+   
+}
+
+/* Una vez guardamos el archivo .css, que contiene las reglas de estilo, se debe referenciar la pagina para que pueda ser 
+leido al cargarla
+
+para ello se usa: <link rel="stylesheet" type="text/css" href="..."> 
+
+Se escribe en la pagina html que queramos introducirla. En este caso la meteré en creando_tablas
+ */
+
+
