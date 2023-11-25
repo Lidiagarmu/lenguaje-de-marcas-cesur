@@ -1,0 +1,21 @@
+body {
+  font-family: "Courier New", Courier, monospace;
+  background-color: beige;
+}
+h1 {
+  color: #922b21;
+  font-size: 30px;
+  text-align: left;
+}
+h2 {
+  color: #ec7063;
+}
+p,
+li {
+  color: black;
+  font-size: 10 px;
+}
+img {
+  width: 300px;
+  height: 225px;
+}
