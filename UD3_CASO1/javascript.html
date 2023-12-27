@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Ejemplo de Funcionalidad con JavaScript</title>
+</head>
+<body>
+
+  <h1>Saludo según la hora del día</h1>
+  
+  <p id="saludo"></p>
+
+  <script>  //esta etiqueta nos permite introducir en este archivo .html código del lenguaje de programación javascript
+
+    // Función para obtener el saludo según la hora del día
+
+    function obtenerSaludo() {
+
+      //creo una variable llamada saludo con parámetro vacío, pues el saludo será uno u otro dependiendo de que condición se cumpla
+      let saludo = '';
+
+      //creamos una constante la cual gracias a los métodos Date() y .getHours() sabremos la hoera actual
+      const horaActual = new Date().getHours(); 
+
+      //con la  un bucle anidado if..else dependiendo en qué tramo del día nos encontramos según la condición dada entre los parñentesis () nos devolverá un saludo u otro
+
+      if (horaActual >= 0 && horaActual < 12) {
+        saludo = '¡Buenos días!';
+      } else if (horaActual >= 12 && horaActual < 18) {
+        saludo = '¡Buenas tardes!';
+      } else {
+        saludo = '¡Buenas noches!';
+      }
+
+      return saludo;
+    }
+
+    // con este método podemos obtener el elemento <p> donde se mostrará el saludo
+
+    const elementoSaludo = document.getElementById('saludo');
+
+
+    // por último con este método podremos mostrar el saludo en la página
+    elementoSaludo.textContent = obtenerSaludo();
+  </script>
+
+</body>
+</html>
