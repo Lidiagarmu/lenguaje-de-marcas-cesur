@@ -13,15 +13,15 @@
 
     // Función para obtener el saludo según la hora del día
 
-    function obtenerSaludo() {
+    const obtenerSaludo =() => {
 
-      //creo una variable llamada saludo con parámetro vacío, pues el saludo será uno u otro dependiendo de que condición se cumpla
+      //creo una variable llamada saludo con un string vacío, pues el saludo será uno u otro dependiendo de que condición se cumpla
       let saludo = '';
 
-      //creamos una constante la cual gracias a los métodos Date() y .getHours() sabremos la hoera actual
+      //creamos una constante la cual gracias a los métodos Date() y .getHours() sabremos la hora actual
       const horaActual = new Date().getHours(); 
 
-      //con la  un bucle anidado if..else dependiendo en qué tramo del día nos encontramos según la condición dada entre los parñentesis () nos devolverá un saludo u otro
+      //con un estructura condicional  if..else if, dependiendo en qué tramo del día nos encontramos según la condición dada entre los parñentesis () nos devolverá un saludo u otro
 
       if (horaActual >= 0 && horaActual < 12) {
         saludo = '¡Buenos días!';
@@ -34,12 +34,12 @@
       return saludo;
     }
 
-    // con este método podemos obtener el elemento <p> donde se mostrará el saludo
-
+    // con el método .getElementById() podemos acceder mediante el Id al elemento <p> por donde se mostrará el saludo
     const elementoSaludo = document.getElementById('saludo');
 
 
-    // por último con este método podremos mostrar el saludo en la página
+    // por último del elemento <p> almacenado anteriormente en la variable accedemos a su propiedad .textContentcon y  mostrar asi el saludo en la página
+   // y lo igualamos al valor que retorna la función obtenerSaludo()
     elementoSaludo.textContent = obtenerSaludo();
   </script>
 
