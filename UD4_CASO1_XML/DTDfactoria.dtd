@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE factoriaSoftware [
+
+        <!--INFORMACIÓN GENERAL DE LA FACTORIA -->
+
+        <!-- El elemento datos es de tipo EMPTY porque no contiene elementos dentro-->
+        <!-- los atributos son declarados #REQUIRED porque necesitan un valor y no se adminte uno por defecto-->
+        <!--además, los atributos son de tipo CDATA o cadena de caracteres-->
+
+        <!ELEMENT datos EMPTY>
+        <!ATTLIST datos
+            nombre CDATA #REQUIRED
+            ubicacion CDATA #REQUIRED
+            codigoPostal CDATA #REQUIRED
+            direccion CDATA #REQUIRED
+            contacto CDATA #REQUIRED
+        >
+
+        <!--ESTRUCTURA DE LA FACTORIA-->
+
+        <!-- el elemento estructura a su vez tiene el elemento departamento el cual aparece cuatro veces-->
+        <!ELEMENT estructura (departamento+)>
+
+        <!-- cada elemento departamento tiene un subelemento diferente con los diferentes departamentos de la factoria -->
+        <!ELEMENT departamento (equipoDesarrollo | equipoPruebas | equipoBasesDeDatos | equipoCiberseguridad)>
+        <!ATTLIST departamento
+            nombre CDATA #REQUIRED
+            numMiembros CDATA #REQUIRED
+        >
+
+        <!--además, cada departamento especifico tendrá su elemento derivado especifico para cada uno (programador, tester, administrador y especialista) -->
+        <!ELEMENT equipoDesarrollo (programador+)>
+        <!ELEMENT equipoPruebas (tester+)>
+        <!ELEMENT equipoBasesDeDatos (administrador+)>
+        <!ELEMENT equipoCiberseguridad (especialista+)>
+
+        <!-- estos elementos vacios de mas elementos, incluyen una serie de atributos para cada uno de ellos de tipo CDATA y #REQUIRED -->
+        <!ELEMENT programador EMPTY>
+        <!ATTLIST programador
+            nombre CDATA #REQUIRED
+            lenguaje CDATA #REQUIRED
+            experiencia CDATA #REQUIRED
+        >
+
+        <!ELEMENT tester EMPTY>
+        <!ATTLIST tester
+            nombre CDATA #REQUIRED
+            herramienta CDATA #REQUIRED
+            experiencia CDATA #REQUIRED
+        >
+
+        <!ELEMENT administrador EMPTY>
+        <!ATTLIST administrador
+            nombre CDATA #REQUIRED
+            lenguaje CDATA #REQUIRED
+            experiencia CDATA #REQUIRED
+        >
+
+        <!ELEMENT especialista EMPTY>
+        <!ATTLIST especialista
+            nombre CDATA #REQUIRED
+            lenguaje CDATA #REQUIRED
+            experiencia CDATA #REQUIRED
+        >
+
+
+] >

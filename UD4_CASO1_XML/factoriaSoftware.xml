@@ -1,0 +1,60 @@
+<!DOCTYPE factoriaSoftware SYSTEM "DTDfactoria.dtd">
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Declaración del Prólogo en la línea anterior, donde indicamos: la versión y codificación de carácteres utilizados-->
+
+
+        <!--Elemento raíz-->
+<factoriaSoftware>
+
+    <!--INFORMACIÓN GENERAL DE LA FACTORIA-->
+    <datos nombre="FactoriaSoftwareSL" ubicacion="Madrid" codigoPostal="28950" direccion="c/ del Mar" contacto="671323118">
+    </datos>
+
+    <!--ESTRUCTURA DE LA FACTORIA-->
+
+    <estructura>
+        <!--Departamento de Desarrollo de Aplicaciones Web-->
+        <departamento nombre="Desarrollo Web" numMiembros="5">
+
+            <equipoDesarrollo>
+                <programador nombre="Lidia García" lenguaje="Java" experiencia="1 año"/>
+                <programador nombre="Laura Sánchez" lenguaje="JavaScrip" experiencia="3 años"/>
+                <programador nombre="Raúl Pino" lenguaje="Phyton" experiencia="4 años"/>
+                <programador nombre="Lidia García" lenguaje="Java" experiencia="1 años"/>
+                <programador nombre="Lidia García" lenguaje="PHP" experiencia="6 años"/>
+            </equipoDesarrollo>
+
+        </departamento>
+
+        <!--Departamento de realización de pruebas para software-->
+        <departamento nombre="Equipo de Pruebas" numMiembros="2">
+
+            <equipoPruebas>
+                <tester nombre="Teresa Carrasco" herramienta="Selenium" experiencia="8 años"/>
+                <tester nombre="Francisco Gómez" herramienta="JUnit" experiencia="2 años"/>
+            </equipoPruebas>
+
+        </departamento>
+
+        <!--Departamento de administración de Bases de Datos-->
+        <departamento nombre="Bases de Datos" numMiembros="2">
+
+            <equipoBasesDeDatos>
+                <administrador nombre="David Muñoz" lenguaje="SQL" experiencia="3 años"/>
+                <administrador nombre="Ana Martinez" lenguaje="SQL" experiencia="9 años"/>
+            </equipoBasesDeDatos>
+
+        </departamento>
+
+        <!--Departamento especialista en Ciberseguridad-->
+        <departamento nombre="Ciberseguridad" numMiembros="1">
+
+            <equipoCiberseguridad>
+                <especialista nombre="José Fernández" lenguaje="C++" experiencia="5 años"/>
+            </equipoCiberseguridad>
+
+        </departamento>
+    </estructura>
+
+</factoriaSoftware>
