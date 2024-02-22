@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="empleados.xsl"?>
+
+
+
+<empleados> 
+
+    <empleado>
+        <DNI>12345678A</DNI>
+        <nombre>Lidia </nombre>
+        <apellidos> García Muñoz </apellidos>
+        <sueldo moneda=" €"> 2300 </sueldo>
+    </empleado>
+
+    <empleado>
+        <DNI>45612128H</DNI>
+        <nombre> Sergio </nombre>
+        <apellidos> Sanz  López </apellidos>
+        <sueldo moneda=" €"> 1100 </sueldo>
+    </empleado>
+
+    <empleado>
+        <DNI>05316345F</DNI>
+        <nombre> Laura </nombre>
+        <apellidos> Sánchez Ochoa </apellidos>
+        <sueldo moneda=" €"> 3000</sueldo>
+    </empleado>
+
+    <empleado>
+        <DNI>87612325L</DNI>
+        <nombre> Federico</nombre>
+        <apellidos> Mirales Torres </apellidos>
+        <sueldo moneda=" €"> 2500 </sueldo>
+    </empleado>
+
+
+</empleados>
