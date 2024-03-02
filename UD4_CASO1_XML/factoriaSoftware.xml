@@ -58,3 +58,23 @@
     </estructura>
 
 </factoriaSoftware>
+
+
+
+
+        <!--en fichero .dtd-->
+        <!--lineas 7 a 13-->
+        <!-- El elemento datos es de tipo EMPTY porque no contiene elementos dentro-->
+        <!-- los atributos son declarados #REQUIRED porque necesitan un valor y no se adminte uno por defecto-->
+        <!--además, los atributos son de tipo CDATA o cadena de caracteres-->
+
+
+        <!-- el elemento estructura a su vez tiene el elemento departamento el cual aparece cuatro veces - linea17-->
+
+         <!-- cada elemento departamento tiene un subelemento diferente con los diferentes departamentos de la factoria - linea 19-->
+
+         <!--lineas 27 a 30-->
+         <!--además, cada departamento especifico tendrá su elemento derivado especifico para cada uno (programador, tester, administrador y especialista) -->
+
+         <!-- a partir de la linea 33-->
+          <!-- estos elementos vacios de mas elementos, incluyen una serie de atributos para cada uno de ellos de tipo CDATA y #REQUIRED -->

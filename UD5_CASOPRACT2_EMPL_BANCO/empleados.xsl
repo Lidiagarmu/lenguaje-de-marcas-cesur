@@ -24,7 +24,7 @@
              <tr>
                 <td> <xsl:value-of select="nombre"/> </td>
                 <td> <xsl:value-of select="apellidos"/></td>
-                <td> <xsl:value-of select="sueldo"/></td>
+                <td> <xsl:value-of select="concat(sueldo, ' ', sueldo/@moneda)"/></td>
             </tr>
         </xsl:if>
         </xsl:for-each>
