@@ -1,0 +1,47 @@
+<!--Es posible forzar que los elementos dejen de flotar sobre los anteriores. Para ello, se debe emplear 
+    la propiedad clear. Si se ajusta a both, tendrá en cuenta los elementos flotantes a ambos lados para 
+    aplicar esta restricción. Si se ajusta a lef  o a right, sólo considerará los elementos flotantes 
+    a izquierda o derecha, respectivamente.-->
+
+    <!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+
+    <title>ejemplo</title>
+
+    <meta charset="utf-8">
+
+    <style>
+
+        div {width:100px;height:100px;float:left;}
+
+    </style>
+
+<body>
+
+    <div style="background-color:blue;">
+
+    </div>
+
+    <div style="background-color:green;">
+
+    </div>
+
+    <div style="background-color:orange;float:right;clear:both;">
+
+    </div>
+
+</body>
+
+</html>
+
+<!-- ORDEN DE APLICACION DE LAS REGLAS PARA LA APLICACION DE ESTILOS
+
+    - estilos declarados en fichero externo
+    - los declarados para toda la pagina con la etiqueta <style> en la cabecera
+    - estilos definidos en un bloque con la etiqueta <div>
+    - los definidos en una etiqueta con el atributo <style> en la etiqueta
+    - los definidos para un porcion del documento con la etiqueta <span>
+-->
