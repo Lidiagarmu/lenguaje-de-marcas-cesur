@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saludo según la hora del día</title>
+    <script>
+        // Función para cargar el archivo XML
+        const cargarXMLDoc = () => {
+            const xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function() {
+                if (this.readyState == 4 && this.status == 200) {
+                    mostrarSaludo(this);
+                }
+            };
+            xhttp.open("GET", "saludos.xml", true);
+            xhttp.send();
+        };
+
+        // Función para mostrar el saludo según la hora del día
+        const mostrarSaludo = (xml) => {
+            const xmlDoc = xml.responseXML;
+            const horaActual = new Date().getHours();
+            const saludos = xmlDoc.getElementsByTagName("saludo");
+            let saludo = '';
+
+            // Iteramos sobre los saludos y seleccionamos el mensaje adecuado
+            for (let i = 0; i < saludos.length; i++) {
+                const hora = parseInt(saludos[i].getElementsByTagName("hora")[0].childNodes[0].nodeValue);
+                if (horaActual >= hora) {
+                    saludo = saludos[i].getElementsByTagName("mensaje")[0].childNodes[0].nodeValue;
+                }
+            }
+
+            // Mostramos el saludo en el elemento <p>
+            const elementoSaludo = document.getElementById('saludo');
+            elementoSaludo.textContent = saludo;
+        };
+
+        // Cargar el archivo XML cuando se cargue la página
+        window.onload = cargarXMLDoc;
+    </script>
+</head>
+<body>
+    <h1>Saludo según la hora del día</h1>
+    <p id="saludo"></p>
+</body>
+</html>

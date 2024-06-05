@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<saludos>
+    <saludo>
+        <hora>0</hora>
+        <mensaje>¡Buenos días!</mensaje>
+    </saludo>
+    <saludo>
+        <hora>12</hora>
+        <mensaje>¡Buenas tardes!</mensaje>
+    </saludo>
+    <saludo>
+        <hora>18</hora>
+        <mensaje>¡Buenas noches!</mensaje>
+    </saludo>
+</saludos>
